@@ -1,0 +1,54 @@
+.navbar-adinfo{
+	@extend .navbar;
+	@extend .navbar-light;
+	z-index: 1;
+	background-color: #F1C40F;
+	position: fixed;
+	width: 100%;
+	.navbar-mini{
+		@extend .navbar-toggler;
+		background-color: #ECF0F1;
+		color: #F1C40F;
+	}
+	.nav-img{
+		@extend .img-fluid;
+		float: right;
+		padding: 0.2rem 0rem;
+	}
+	.collapse-ad{
+		position: fixed;
+		top:-40%;
+		left:0%;
+		width: 100%;
+		@include transition(0.5s);
+		.nav-list{
+			@extend .nav;
+			margin-top: 3rem;
+			background-color: rgba(241,196,15,0.8);
+
+			.list-item{
+				@extend .nav-item;
+				margin-bottom: 0.5rem;
+				.list-link{
+					@extend .nav-link;
+					width: 100%;
+					text-align: left;
+					padding-left: 2rem;
+					color: #34495E;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+.menu-open{
+	.navbar-adinfo{
+		.collapse-ad{
+		z-index: -999;
+		position: fixed;
+		top:5px;
+		left:0%;
+		width: 100%;				
+		}
+	}
+}

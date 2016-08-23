@@ -1,0 +1,47 @@
+.servicos{
+	@extend .container-fluid;
+	background-color: #498DB3;
+
+	.titulo-servicos{
+		@extend .col-xs-12;
+		text-align: center;
+		padding: 2rem 0rem;
+		font-family: "Circuit";
+		font-size: 300%;
+	}
+	.servicos-section{
+		@extend .row;
+		.card-servicos{
+			@extend .col-xs-12;
+			@extend .col-md-6;
+			@extend .col-lg-4;
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				max-width: 27.3%;
+				margin-right: 3%;
+				margin-left: 3%;
+				}				
+			background-color: #498DB3;
+			text-align: center;
+			margin-bottom: 1rem;
+			
+			.imagem-card{
+				@extend .card-img-top;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				
+			}
+			.body-card{
+				color: #34495E;
+				.title-card{
+					@extend .card-title;
+					font-size: 1.8rem;
+				}
+				.text-card{
+					@extend .card-text;
+					font-size: 1rem;
+					color: #ECF0F1;
+				}
+			}
+		}
+	}
+}

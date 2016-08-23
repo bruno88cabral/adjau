@@ -1,0 +1,39 @@
+.sobre{
+	@extend .container-fluid;
+	background-color: #ECF0F1;
+	.titulo-sobre{
+		@extend .col-xs-12;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		text-align: center;
+		font-family: "Circuit";
+		font-size: 300%;
+	}
+	.text-side-sobre{
+		@extend .col-xs-12;
+		@extend .col-md-7;
+		.pre-text{
+			color: #3498DB;
+			margin-bottom: 1.5rem;
+			font-size: 180%;
+		}
+		.sobre-text{
+			color: #34495E;
+			text-indent: 1rem;
+			font-size: 120%;
+			margin-bottom: 1.5rem;
+		}
+	}
+	.img-side-sobre{
+		@extend .col-xs-12;
+		@extend .col-md-5;
+		text-align: center;
+		padding-bottom: 1rem;
+		.img-web{
+			height: 50%;
+			width: 50%;
+
+		}
+
+	}
+}

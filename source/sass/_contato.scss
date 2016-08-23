@@ -1,0 +1,27 @@
+.contato{
+	@extend .container-fluid;
+	color: #34495E;
+	background-color: #F1C40F;
+	padding-bottom: 1rem;
+	.titulo-contato{
+		@extend .col-xs-12;
+		text-align: center;
+		padding: 2rem 0rem;
+		font-family: "Circuit";
+		font-size: 300%;
+	}
+	.text-contato{
+		text-align: center;
+	}
+	.local,
+	.telefone,
+	.email{
+		@extend .col-xs-12;
+		@extend .col-md-4;
+		text-align: center;
+		padding-bottom: 0.5rem;
+		.fa{
+			color: #3498DB;
+		}
+	}
+}

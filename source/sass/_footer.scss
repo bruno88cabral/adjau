@@ -1,0 +1,15 @@
+.footer-ad{
+	@extend .container-fluid;
+	background-color: #34495E;	
+	.footer-name{
+		@extend .col-xs-12;
+		text-align: center;
+		color: #ECF0F1;
+		padding: 1rem 0rem;
+		a.link-footer,{
+			color: #ECF0F1;
+			font-size: 1.1rem;
+			font-weight: 500;
+		}
+	}
+}

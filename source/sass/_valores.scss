@@ -1,0 +1,35 @@
+.valores{
+	@extend .container-fluid;
+	background-color: #34495E;
+
+	.titulo-valores{
+		@extend .col-xs-12;
+		text-align: center;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		color: #3498DB;
+		font-family: "Circuit";
+		font-size: 300%;
+	}
+	.img-side-valores{
+		@extend .col-xs-12;
+		@extend .col-md-5;
+		float: right;
+		text-align: center;
+		padding-bottom: 2rem;
+		.img-global{
+			height: 50%;
+			width: 50%;
+		}
+	}
+	.text-side-valores{
+		color: #ECF0F1;
+		@extend .col-md-7;
+		.text-valores{
+			padding-top: 1rem;
+			@media(min-width: map-get($grid-breakpoints,lg)){
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

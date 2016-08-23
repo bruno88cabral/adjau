@@ -1,0 +1,16 @@
+@import "../components/bootstrap/scss/bootstrap.scss";
+@import "../components/components-font-awesome/scss/font-awesome.scss";
+
+@import "menu";
+@import "home";
+@import "sobre";
+@import "valores";
+@import "servicos";
+@import "contato";
+@import "footer";
+
+@font-face{
+	font-family: "Circuit";
+	src: url("../../dist/fonts/upheavtt.ttf");
+}
+
